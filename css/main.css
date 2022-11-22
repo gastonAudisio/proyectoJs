@@ -1,0 +1,455 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Bungee+Spice&family=DynaPuff&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Bungee+Spice&family=DynaPuff&family=Montserrat:wght@200&family=Roboto:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5;
+}
+html body {
+  background-color: rgb(234, 234, 245);
+}
+html body h1, html body h4, html body h3 {
+  color: darkblue;
+}
+
+.img {
+  width: 70%;
+  height: 100%;
+}
+
+.imgC {
+  width: 50%;
+  justify-content: center;
+}
+
+.wLibros {
+  width: 100%;
+}
+
+.transform:hover {
+  transform: translateX(2px);
+  cursor: pointer;
+  transition: transform 1s all;
+  filter: drop-shadow(5px);
+  box-shadow: 10px 10px 40px 10px #5f4b8b;
+}
+
+.scale:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+@-webkit-keyframes textOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes textOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.flexImg {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.imgCards {
+  width: 12rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.flexFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*------grid index----------------*/
+#gridContenedor {
+  display: grid;
+  width: 98.5vw;
+  height: 100vh;
+  gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "one" "two" "three" "four" "six" "five";
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+  background-color: rgb(25, 23, 126);
+}
+
+.six {
+  grid-area: six;
+}
+
+/*------grid contacto----------------*/
+#gridContenedorContacto {
+  display: grid;
+  width: 98.5vw;
+  height: 100vh;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "one" "two" "three" "four" "five";
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+  background-color: rgb(234, 234, 245);
+}
+
+.four {
+  grid-area: four;
+  align-items: center;
+}
+
+.five {
+  grid-area: five;
+  background-color: rgb(25, 23, 126);
+}
+
+/*------grid géneros----------------*/
+#gridContenedorGeneros {
+  display: grid;
+  width: 98.5vw;
+  height: 100vh;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "one" "two" "three" "four" "five";
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+  align-items: center;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+  background-color: rgb(25, 23, 126);
+}
+
+/*------Pagina de Error----------------*/
+.contenedorError {
+  display: grid;
+  width: 100vw;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-areas: "one" "three" "five";
+}
+
+.boxError {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+h1, h3, h4 {
+  background: linear-gradient(to right, rgb(199, 227, 255), rgb(8, 95, 175));
+  font-family: "Montserrat", sans-serif;
+  padding: 1.5rem;
+  font-weight: 700;
+  margin: 5px 20px;
+  border-radius: 10px;
+  -webkit-animation-name: textOpacity;
+          animation-name: textOpacity;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+h4 {
+  padding: 0.5rem;
+  margin: 5px 40px;
+}
+
+h3 {
+  padding: 1rem;
+  margin: 20px 20px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-family: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.pBox {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  color: black;
+  font-family: "Aboreto", cursive;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pCard, .pCard2 {
+  padding-top: 22px;
+}
+
+.pCard2 {
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+
+.buttonCard {
+  background: linear-gradient(to right, rgb(22, 69, 116), rgb(10, 109, 201));
+  border-color: white;
+  border-radius: 30px;
+}
+
+.fontForm {
+  font-family: "Aboreto", cursive;
+  font-weight: 800;
+}
+
+/*------responsive index----------------*/
+@media (min-width: 480px) {
+  #gridContenedor {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "one one" "two three" "four four" "six six" "five five";
+  }
+  .wLibros {
+    width: 50%;
+  }
+  aside ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 720px) {
+  #gridContenedor {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "one one one" "two two two" "three three three" "four four four" "six six six" "five five five";
+  }
+  .wLibros {
+    width: 30%;
+  }
+  aside ul li {
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  #gridContenedor {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "one one one" "two two two" "three four four" "six four four" "five five five";
+  }
+  .wLibros {
+    width: 35%;
+  }
+  .flexSix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*------responsive contacto----------------*/
+@media (min-width: 480px) {
+  #gridContenedorContacto {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "one one" "two three" "four four" "five five";
+  }
+  .wLibros {
+    width: 50%;
+  }
+  aside ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 720px) {
+  #gridContenedorContacto {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "one one" "two two" "three three" "four four" "five five";
+  }
+  .wLibros {
+    width: 30%;
+  }
+  aside ul li {
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  #gridContenedorContacto {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "one one one" "two two two" "three four four" "five five five";
+  }
+  .wLibros {
+    width: 35%;
+  }
+}
+/*------responsive generos----------------*/
+@media (min-width: 480px) {
+  #gridContenedorGeneros {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "one one" "two three" "four four" "five five";
+  }
+  .wLibros {
+    width: 50%;
+  }
+  aside ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 720px) {
+  #gridContenedorGeneros {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "one one" "two two" "three three" "four four" "five five";
+  }
+  .wLibros {
+    width: 30%;
+  }
+  aside ul li {
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  #gridContenedorGeneros {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "one one one" "two two two" "three four four" "five five five";
+  }
+  .wLibros {
+    width: 35%;
+  }
+}
+aside ul {
+  list-style: none;
+  margin: 2rem auto;
+}
+
+.fontNav {
+  text-decoration: none;
+  font-family: "DynaPuff", cursive;
+  font-size: 1.5rem;
+}
+
+.boton {
+  padding: 20px 50px;
+  position: relative;
+  margin: 10px;
+}
+
+.btn3 {
+  overflow: hidden;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn3::after {
+  content: "";
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: -100px;
+  top: -50px;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg, rgb(18, 230, 230) 0%, rgb(0, 81, 255) 50%, rgb(225, 0, 255) 100%);
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+
+.btn3:hover {
+  transform: translate(0px, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5), -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
+}
+
+.btn3:hover::after {
+  transform: rotate(150deg);
+}

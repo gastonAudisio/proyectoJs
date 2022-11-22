@@ -1,0 +1,176 @@
+   <!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aquí podras encontrar los mejores libros clásicos y los más vendidos a un precio increible !"> 
+    <meta name="keywords" content="Libros,Autores,Clásicos,Terror,Ciencia Ficción,Ofertas">
+    <meta name="author" content="Lucas Gastón Audisio">
+    <link rel="shortcut icon" href="src/imagenfavicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Libros de Gastón</title>
+     
+</head>
+<body>
+    <div id="gridContenedor">
+      <header class="one">
+          <div class="flexFooter textCenter h1">
+              <a href="index.html">
+                <img  class="scale" src="src/favicon-small.png" alt="pequeña imagen de libros">
+              </a>
+                <h1>Los mejores libros al mejor precio ! El mejor sitio de Literatura que podrás encontrar ! </h1>
+          </div>   
+            <article>
+                <p class="textCenter pFont pBox">
+                  En nuestro sitio podrás encontrar toda variedad de libros,tenemos desde clásicos 
+                  de la literatura mundial,hasta las novedades y mas vendidos del momento.
+
+                </p>
+              </article>
+        
+          <!-- inicia carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="src/imglibreria.jpg" class="d-block w-100" alt="Gran libreria">
+              </div>
+              <div class="carousel-item">
+                <img src="src/imgatlas.jpg" class="d-block w-100" alt="Anteojos sobre un libro">
+              </div>
+              <div class="carousel-item">
+                <img src="src/imgkids.jpg" class="d-block w-100" alt="niños leyendo en un bosque">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- inicia carousel -->
+      </header>
+
+      <aside class="two">
+        <!-- inicia navbar -->
+        <nav class="navbar navbar-expand-md fontNav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active boton btn3" aria-current="page" href="index.html ">Inicio</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link boton btn3" href="ingreso.html">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link boton btn3" href="comprar.html">Carrito de Compras</a>
+                </li>
+
+            
+            </div>
+          </div>
+        </nav>
+        <!-- finaliza navbar -->
+      </aside>
+      
+          <section class="three">
+              <article>
+                <p class="textCenter pFont pBox">
+                Busca en nuestras secciones y descubre tu próxima aventura literaria!
+                </p>
+              </article>
+              <div>
+                <img src="src/lirbosvector.svg" alt="carpa en un bosque nocturno">
+              </div>
+          </section>
+   
+
+    
+          <section class="four">
+            <!-- comienzan cards -->
+
+            <div class="flexImg">
+              <div class="card transform imgMargin imgCards books" data-title="Heidi" data-price="5000">
+                <img src="src/libros/heidi.svg" class="card-img-top" alt="libro de Heidi">
+                <div class="card-body">
+                  <h2 class="card-title">Heidi</h2>
+                  <p class="card-text pCard">Johanna Spyri</p>
+                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
+                </div>
+              </div>
+              <div class="card transform imgMargin imgCards books" data-title="Orgullo y Prejuicio" data-price="6000">
+                <img src="src/libros/orgullosvg.svg" class="card-img-top" alt="libro Orgullo y Prejuicio de Jane Austen">
+                <div class="card-body">
+                  <h2 class="card-title">Orgullo y Prejuicio</h2>
+                  <p class="card-text">Jane Austen</p>
+                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
+                </div>
+              </div>
+              <div class="card transform imgMargin imgCards books" data-title="Frankenstein" data-price="3000">
+                <img src="src/libros/franken.svg" class="card-img-top" alt="Libro de Frankenstein">
+                <div class="card-body">
+                  <h2 class="card-title">Frankenstein</h2>
+                  <p class="card-text pCard">Mary Shelley</p>
+                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
+                </div>
+              </div>
+              <div class="card transform imgMargin imgCards books" data-title="El Libro de la Selva" data-price="8500">
+                <img src="src/libros/libroselva.svg" class="card-img-top" alt="libro del libro de la selva">
+                <div class="card-body">
+                  <h2 class="card-title">El Libro de la Selva</h2>
+                  <p class="card-text">Rudyard Kipling</p>
+                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
+                </div>
+              </div>
+              <div class="card transform imgMargin imgCards books" data-title="1984" data-price="12500">
+                <img src="src/libros/1984.svg" class="card-img-top" alt="libro de 1984">
+                <div class="card-body">
+                  <h2 class="card-title">1984</h2>
+                  <p class="card-text pCard">George Orwell</p>
+                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
+                </div>
+              </div>
+
+                
+            </div>
+            <!-- finalizan cards --> 
+
+          </section>
+
+       
+          <div class="six flexSix"> 
+            <h3>Escucha musica relax mientras lees !</h3>
+            
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/KfADcE8DOuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        </div> 
+
+      <footer class="flexFooter five">
+          <h4>Visítanos en nuestras redes sociales</h4>
+          
+              <img class="scale" src="src/facebook_logo.svg" alt="icono de Facebook">
+              <img class="scale" src="src/whats.png" alt="icono de WhatsApp">
+          
+              <a href="index.html">
+                <img  class="scale" src="src/favicon-small.png" alt="pequeña imagen de libros">
+              </a>
+      </footer>
+
+    </div>
+   <script src="js/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
+ 
