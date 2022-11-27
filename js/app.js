@@ -45,19 +45,3 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 })
 
-/*
-localStorage.setItem('carrito',JSON.stringify(arrayLibros));
-const carrito =JSON.parse(localStorage.getItem('arrayLibros'))
-
-*/
-
-//let agregar = localStorage.getItem('arrayLibros')
-
-
-/*
-let carrito = JSON.stringify(arrayLibros)
-localStorage.setItem("arrayLibros",carrito)
-
-let carritojson = JSON.parse(carrito)
-
-*/
