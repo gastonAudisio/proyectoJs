@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
          console.log(arrayLibros)
         })
     }
-    console.log(arrayLibros)
+
 })
 /*
 const agregarAlCarrito = (libroNombre) =>{
