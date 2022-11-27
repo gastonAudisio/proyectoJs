@@ -45,3 +45,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 })
 
+
+const btn = document.querySelector('#icon')
+
+btn.addEventListener('click', () => {
+
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Lo sentimos,algo anda mal!',
+        
+      })
+})
