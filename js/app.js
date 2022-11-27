@@ -22,8 +22,6 @@ const libro5 = new libro ('1984','Ciencia Ficción',12500)
 
 let arrayLibros = []
 
-//console.log(arrayLibros)
-
 //--------------------------------
 
 
@@ -40,40 +38,34 @@ document.addEventListener('DOMContentLoaded', ()=>{
             title:title,
             price:price
            })
-         //console.log(arrayLibros)
+         console.log(arrayLibros)
         })
     }
 })
-
-const agregarAlCarrito = (prodNombre) =>{
+/*
+const agregarAlCarrito = (libroNombre) =>{
     const item = arrayLibros.find((libro)=>libro.nombre===libroNombre)
-    arrayLIbros.push(item)
+    arrayLibros.push(item)
 }
-const boton = document.getElementById('agregar${libro.nombre}')
+const boton = document.getElementsByClassName('books${libro.nombre}')
 
 boton.addEventListener('click',()=>{
     agregarAlCarrito(libro.nombre)
+    
 })
 
-
-
-
-
-/*
-const arrayLibrosString = JSON.stringify(arrayLibros)
-
-localStorage.setItem("arrayLibros",arrayLibrosString)
-
-let salida = JSON.parse(localStorage.getItem('arrayLibros'))
-console.log(salida)
-// localStorage.clear()
 */
 
 
-/*
-function agregarAlDom(){
-    contenedor.innerHTML = `<h3>
-    `
-}
-*/
+
+
+//localStorage.setItem('carrito',JSON.stringify(arrayLibros));
+//const carrito =JSON.parse(localStorage.getItem("arrayLibros"))
+
+//let agregar = localStorage.getItem('arrayLibros')
+
+let carrito = JSON.stringify(arrayLibros)
+localStorage.setItem("arrayLibros",carrito)
+
+let carritojson = JSON.parse(carrito)
 
