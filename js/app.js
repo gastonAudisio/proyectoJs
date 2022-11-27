@@ -41,20 +41,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
          console.log(arrayLibros)
         })
     }
+    console.log(arrayLibros)
 })
 /*
 const agregarAlCarrito = (libroNombre) =>{
     const item = arrayLibros.find((libro)=>libro.nombre===libroNombre)
     arrayLibros.push(item)
 }
-const boton = document.getElementsByClassName('books${libro.nombre}')
-
-boton.addEventListener('click',()=>{
-    agregarAlCarrito(libro.nombre)
-    
-})
-
-*/
 
 
 
@@ -69,3 +62,4 @@ localStorage.setItem("arrayLibros",carrito)
 
 let carritojson = JSON.parse(carrito)
 
+*/
