@@ -1,4 +1,4 @@
-
+const carrito =JSON.parse(localStorage.getItem('arrayLibros'))
 //-----Clases---------------------
 class libro {
     constructor(n,g,p){
@@ -39,24 +39,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
             price:price
            })
          console.log(arrayLibros)
+         localStorage.setItem('carrito',JSON.stringify(arrayLibros));
         })
     }
 
 })
+
 /*
-const agregarAlCarrito = (libroNombre) =>{
-    const item = arrayLibros.find((libro)=>libro.nombre===libroNombre)
-    arrayLibros.push(item)
-}
+localStorage.setItem('carrito',JSON.stringify(arrayLibros));
+const carrito =JSON.parse(localStorage.getItem('arrayLibros'))
 
-
-
-
-//localStorage.setItem('carrito',JSON.stringify(arrayLibros));
-//const carrito =JSON.parse(localStorage.getItem("arrayLibros"))
+*/
 
 //let agregar = localStorage.getItem('arrayLibros')
 
+
+/*
 let carrito = JSON.stringify(arrayLibros)
 localStorage.setItem("arrayLibros",carrito)
 
