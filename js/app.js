@@ -13,6 +13,7 @@ const libro2 = new libro ('Orgullo y Prejuicio','Drama',6000)
 const libro3 = new libro ('Frankenstein','Terror',3000)
 const libro4 = new libro ('El libro de la Selva','Aventura',8500)
 const libro5 = new libro ('1984','Ciencia Ficción',12500)
+const libro6 = new libro ('Billy Summers','Suspenso',11000)
 
 //--------------------------------
 
