@@ -1,4 +1,7 @@
+
+let arrayLibros = []
 const carrito =JSON.parse(localStorage.getItem('arrayLibros'))
+
 //-----Clases---------------------
 class libro {
     constructor(n,g,p){
@@ -16,16 +19,6 @@ const libro5 = new libro ('1984','Ciencia Ficción',12500)
 const libro6 = new libro ('Billy Summers','Suspenso',11000)
 
 //--------------------------------
-
-
-
-//-----Arrays---------------------
-
-let arrayLibros = []
-
-//--------------------------------
-
-
 
 document.addEventListener('DOMContentLoaded', ()=>{
 
@@ -46,6 +39,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 })
 
+//--------------------------------
 
 const btn = document.querySelector('#icon')
 
@@ -58,3 +52,19 @@ btn.addEventListener('click', () => {
         
       })
 })
+
+//--------------------------------
+
+const mostrarCarrito = ()=> {
+    const modalBody = document.querySelector('.modal modal-body')
+
+    modalBody.innerHTML = ''
+    carrito.forEach((arrayLibros) => {
+     arrayLibros = modalBody.innerHTML += `
+        <div > 
+        ${arrayLibros}
+        <div/>
+        `
+        
+    });
+}
