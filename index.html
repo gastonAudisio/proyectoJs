@@ -1,4 +1,4 @@
-   <!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <meta name="author" content="Lucas Gastón Audisio">
     <link rel="shortcut icon" href="src/imagenfavicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <title>Libros de Gastón</title>
      
 </head>
@@ -100,61 +100,15 @@
           <section class="four">
             <!-- comienzan cards -->
 
-            <div class="flexImg">
-              <div class="card transform imgMargin imgCards books" data-title="Heidi" data-price="5000">
-                <img src="src/libros/heidi.svg" class="card-img-top" alt="libro de Heidi">
-                <div class="card-body">
-                  <h2 class="card-title">Heidi</h2>
-                  <p class="card-text pCard">Johanna Spyri</p>
-                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
-                </div>
-              </div>
-              <div class="card transform imgMargin imgCards books" data-title="Orgullo y Prejuicio" data-price="6000">
-                <img src="src/libros/orgullosvg.svg" class="card-img-top" alt="libro Orgullo y Prejuicio de Jane Austen">
-                <div class="card-body">
-                  <h2 class="card-title">Orgullo y Prejuicio</h2>
-                  <p class="card-text">Jane Austen</p>
-                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
-                </div>
-              </div>
-              <div class="card transform imgMargin imgCards books" data-title="Frankenstein" data-price="3000">
-                <img src="src/libros/franken.svg" class="card-img-top" alt="Libro de Frankenstein">
-                <div class="card-body">
-                  <h2 class="card-title">Frankenstein</h2>
-                  <p class="card-text pCard">Mary Shelley</p>
-                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
-                </div>
-              </div>
-              <div class="card transform imgMargin imgCards books" data-title="El Libro de la Selva" data-price="8500">
-                <img src="src/libros/libroselva.svg" class="card-img-top" alt="libro del libro de la selva">
-                <div class="card-body">
-                  <h2 class="card-title">El Libro de la Selva</h2>
-                  <p class="card-text">Rudyard Kipling</p>
-                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
-                </div>
-              </div>
-              <div class="card transform imgMargin imgCards books" data-title="1984" data-price="12500">
-                <img src="src/libros/1984.svg" class="card-img-top" alt="libro de 1984">
-                <div class="card-body">
-                  <h2 class="card-title">1984</h2>
-                  <p class="card-text pCard">George Orwell</p>
-                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
-                </div>
-              </div>
-              <div class="card transform imgMargin imgCards books" data-title="Billy Summers" data-price="10500">
-                <img src="src/libros/billy.jpg" class="card-img-top" alt="libro de Billy Summers">
-                <div class="card-body">
-                  <h2 class="card-title">Billy Summers</h2>
-                  <p class="card-text pCard">Stephen King</p>
-                  <a  class="btn btn-primary buttonCard agregar">Agregar al Carrito</a>
-                </div>
-              </div>
+            <div class="flexImg " id="contenedor">
+             
 
                 
             </div>
-            <!-- finalizan cards --> 
+           
 
           </section>
+           <!-- finalizan cards --> 
 
           <!-- -- comienza modal -- -->
           <section>
@@ -166,11 +120,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <p>aca va la imagen y la descripcion</p>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" id="comprar" class="btn btn-primary">Comprar</button>
                   </div>
                 </div>
               </div>
@@ -200,7 +154,7 @@
     </div>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <script src="js/app.js"></script>
+  <script src="app.js"></script>
  
 </body>
 </html>
